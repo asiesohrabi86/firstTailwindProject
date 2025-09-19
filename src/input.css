@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .filimo-btn{
+        @apply bg-filimo-green px-2 min-[440px]:px-3 py-2 rounded-md text-xs min-[440px]:text-sm;
+    }
+}
+
+@font-face {
+    font-family: "vazir";
+    src: url("fonts/vazir/Farsi-Digits/Vazir-Regular-FD.eot"),
+    url("fonts/vazir/Farsi-Digits/Vazir-Regular-FD.woff"),
+    url("fonts/vazir/Farsi-Digits/Vazir-Regular-FD.woff2");
+}
+
+body {
+    font-family: "vazir";
+}
+

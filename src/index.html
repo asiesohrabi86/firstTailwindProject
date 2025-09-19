@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="bg-black/70 h-14 flex items-center px-2 fixed top-0 right-0 left-0 z-50">
+       <section class="container">
+        <section class="flex items-center justify-between">
+            <section class="flex">
+                <div class="me-10 border-zinc-600 border-e pe-5">
+                    <img src="images/logo.png" alt="" class="w-20 h-5">
+                </div>
+                <div class="text-white space-x-10 space-x-reverse hidden md:flex">
+                    <div class="flex items-center space-x-2 space-x-reverse">
+                        <i class="fa fa-car text-sm"></i>
+                        <p class="text-sm">فیلیموتور</p>
+                    </div>
+                    <div class="flex items-center space-x-2 space-x-reverse">
+                        <i class="fa fa-bell text-sm"></i>
+                        <p class="text-sm">فیلیمومدرسه</p>
+                    </div>
+                    <div class="flex items-center space-x-2 space-x-reverse">
+                        <i class="fa fa-search text-sm"></i>
+                        <p class="text-sm">جستجو</p>
+                    </div>
+                </div>
+           </section>
+           <section class="flex items-center text-white space-x-3 space-x-reverse">
+                <div class="md:hidden">
+                    <i class="fas fa-search text-sm xs:text-lg"></i>
+                </div>
+                <div class="">
+                    <button class="filimo-btn">
+                        <i class="fa fa-video-camera hidden md:inline"></i>
+                        خرید اشتراک
+                    </button>
+                </div>
+                <div class="">
+                    <button class="bg-zinc-700 px-3 py-2 rounded-md text-xs xs:text-sm">ورود</button>
+                </div>
+           </section>
+        </section>
+       </section>
+    </header>
+    <main>
+       <section class="bg-first-section-header-bg bg-no-repeat h-[700px] text-white flex flex-col justify-center items-center relative bg-cover">
+            <div class="overlay absolute bg-gradient-to-b from-zinc-900/70 from-80% to-zinc-900/95 to-85% w-full h-full z-10"></div>
+            <div class="relative z-20 px-2">
+                <h3 class="text-wrap text-center text-xl xs:text-2xl sm:text-3xl text-filimo-green font-bold">تماشای فیلم و سریال های ایرانی و خارجی در فیلیمو</h3>
+            </div>
+            <div class="relative z-20 px-2">
+                <h6 class="text-md xs:text-lg text-center mt-5">
+                    با خرید اشتراک فیلیمو، به بیش از
+                    <b>95000 فیلم، سریال و انیمیشن</b>
+                    برای تماشا دسترسی دارید.
+                </h6>
+            </div>
+            <div class="relative z-20 w-full flex flex-col space-y-5 justify-center items-center mt-7 px-2">
+                <article class="bg-zinc-800 border border-zinc-700 rounded-md w-full xs:w-5/6 sm:w-3/4 lg:w-1/2 xl:w-2/4 flex justify-between h-28">
+                    <div>
+                        <div class="flex m-3">
+                            <div>
+                                <h6 class="text:md xs:text-lg font-bold">یک ماهه</h6>
+                            </div>
+                            <div class="ms-3">
+                                <div class="bg-green-50 rounded-xl text-filimo-green px-2 py-1 text-xs xs:text-sm">
+                                    <h6>30% تخفیف</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center ms-3">
+                            <p class="text-2xl xs:text-3xl me-2">115000</p>
+                            <p class="text-sm">تومان / ماهانه</p>
+                        </div>
+                    </div>
+                    <div class="self-center me-4">
+                        <button class="bg-filimo-green px-4 xs:px-7 py-2 xs:py-3 rounded-md text-sm">خرید اشتراک</button>
+                    </div>
+                </article>
+                <article class="bg-zinc-800 border border-zinc-700 rounded-md w-full xs:w-5/6 sm:w-3/4 lg:w-1/2 xl:w-2/4 flex justify-between h-28">
+                    <div>
+                        <div class="flex m-3">
+                            <div>
+                                <h6 class="text:md xs:text-lg font-bold">یک ماهه</h6>
+                            </div>
+                            <div class="ms-3">
+                                <div class="bg-green-50 rounded-xl text-filimo-green px-2 py-1 text-xs xs:text-sm">
+                                    <h6>30% تخفیف</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center ms-3">
+                            <p class="text-2xl xs:text-3xl me-2">115000</p>
+                            <p class="text-sm">تومان / ماهانه</p>
+                        </div>
+                    </div>
+                    <div class="self-center me-4">
+                        <button class="bg-filimo-green px-4 xs:px-7 py-2 xs:py-3 rounded-md text-sm">خرید اشتراک</button>
+                    </div>
+                </article>
+            </div>
+            <div class="relative z-20 mt-3">
+                <p class="text-center text-sm text-zinc-500 font-bold">
+                    10% مالیات بر ارزش افزوده به قیمت اشتراک ها اضافه میشود. 
+                </p>
+            </div>
+            <div class="relative z-20 flex items-center space-x-3 space-x-reverse mt-5">
+                <p class="max-[639px]:text-sm">
+                    مانده همه اشتراک ها
+                </p>
+                <i class="fa fa-arrow-left"></i>
+            </div> 
+       </section>
+       <section class="bg-zinc-800 text-white py-7 max-[639px]:px-2">
+            <div class="sm:container">
+                <header>
+                    <h3 class="text-xl">محبوب ترین های فیلیمو</h3>
+                </header>
+                <div class="mt-4 flex space-x-5 space-x-reverse overflow-auto">
+                    <article class="shrink-0 bg-first-article-img w-32 h-52 lg:w-52 lg:h-72 rounded border border-zinc-500 relative flex items-end justify-center">
+                        <div class="overlay absolute w-full h-full bg-zinc-800/30"></div>
+                        <h6 class="relative z-40 text-sm">اختصاصی <span class="text-filimo-yellow">فیلیمو</span></h6>
+                    </article>
+                    <article class="shrink-0 bg-first-article-img w-32 h-52 lg:w-52 lg:h-72 rounded border border-zinc-500 relative flex items-end justify-center">
+                        <div class="overlay absolute w-full h-full bg-zinc-800/30"></div>
+                        <h6 class="relative z-40 text-sm">اختصاصی <span class="text-filimo-yellow">فیلیمو</span></h6>
+                    </article>
+                    <article class="shrink-0 bg-first-article-img w-32 h-52 lg:w-52 lg:h-72 rounded border border-zinc-500 relative flex items-end justify-center">
+                        <div class="overlay absolute w-full h-full bg-zinc-800/30"></div>
+                        <h6 class="relative z-40 text-sm">اختصاصی <span class="text-filimo-yellow">فیلیمو</span></h6>
+                    </article>
+                    <article class="shrink-0 bg-first-article-img w-32 h-52 lg:w-52 lg:h-72 rounded border border-zinc-500 relative flex items-end justify-center">
+                        <div class="overlay absolute w-full h-full bg-zinc-800/30"></div>
+                        <h6 class="relative z-40 text-sm">اختصاصی <span class="text-filimo-yellow">فیلیمو</span></h6>
+                    </article>
+                    <article class="shrink-0 bg-first-article-img w-32 h-52 lg:w-52 lg:h-72 rounded border border-zinc-500 relative flex items-end justify-center">
+                        <div class="overlay absolute w-full h-full bg-zinc-800/30"></div>
+                        <h6 class="relative z-40 text-sm">اختصاصی <span class="text-filimo-yellow">فیلیمو</span></h6>
+                    </article>
+                    <article class="shrink-0 bg-first-article-img w-32 h-52 lg:w-52 lg:h-72 rounded border border-zinc-500 relative flex items-end justify-center">
+                        <div class="overlay absolute w-full h-full bg-zinc-800/30"></div>
+                        <h6 class="relative z-40 text-sm">اختصاصی <span class="text-filimo-yellow">فیلیمو</span></h6>
+                    </article>
+                    <article class="shrink-0 bg-first-article-img w-32 h-52 lg:w-52 lg:h-72 rounded border border-zinc-500 relative flex items-end justify-center">
+                        <div class="overlay absolute w-full h-full bg-zinc-800/30"></div>
+                        <h6 class="relative z-40 text-sm">اختصاصی <span class="text-filimo-yellow">فیلیمو</span></h6>
+                    </article>
+                    <article class="shrink-0 bg-first-article-img w-32 h-52 lg:w-52 lg:h-72 rounded border border-zinc-500 relative flex items-end justify-center">
+                        <div class="overlay absolute w-full h-full bg-zinc-800/30"></div>
+                        <h6 class="relative z-40 text-sm">اختصاصی <span class="text-filimo-yellow">فیلیمو</span></h6>
+                    </article>
+                    <article class="shrink-0 bg-first-article-img w-32 h-52 lg:w-52 lg:h-72 rounded border border-zinc-500 relative flex items-end justify-center">
+                        <div class="overlay absolute w-full h-full bg-zinc-800/30"></div>
+                        <h6 class="relative z-40 text-sm">اختصاصی <span class="text-filimo-yellow">فیلیمو</span></h6>
+                    </article>
+                </div>
+            </div>
+       </section>
+       <section class="bg-zinc-800 bg-second-section-img relative h-[400px] xs:h-[500px] bg-cover text-white">
+            <div class="overlay absolute size-full bg-gradient-to-r from-zinc-800/60 from-75% sm:from-65% to-zinc-800/100 sm:to-80%"></div>
+            <div class="max-[639px]:px-2 sm:container relative z-30 py-6">
+                <header>
+                    <h3 class="text-xl">جوکر 2</h3>
+                </header>
+                <section class="mt-5">
+                    <div class="flex justify-between">
+                        <div>
+                            <div class="text-zinc-300 sm:text-zinc-500">
+                                <p>کارگردان: احسان علیخانی</p>
+                            </div>
+                            <div class="flex mt-3 space-x-2 space-x-reverse">
+                                <div class="bg-zinc-700 rounded-xl px-2 py-1 text-xs">ریلیتی شو</div>
+                                <div class="bg-zinc-700 rounded-xl px-2 py-1 text-xs">کمدی</div>
+                            </div>
+                        </div>
+                        <div class="size-36 xs:size-48">
+                            <img src="images/joker.png" alt="">
+                        </div>
+                    </div>
+                    <div class="flex space-x-10 space-x-reverse mt-8 xs:mt-16">
+                        <article class="w-1/3 lg:w-1/5 h-32">
+                            <section class="size-full bg-cover bg-no-repeat rounded-lg flex justify-center items-center relative">
+                                <div class="bg-first-article-img size-full bg-cover bg-no-repeat rounded-lg absolute z-10 blur-[1px]"></div>
+                                <div class="bg-black/70 rounded-full py-3 px-4 flex justify-center items-center relative z-20">
+                                    <i class="fa fa-lock"></i>
+                                </div>
+                            </section>
+                            <p class="text-xs mt-2">فصل 1 قسمت 1</p>
+                        </article>
+                        <article class="w-1/3 lg:w-1/5 h-32">
+                            <section class="size-full bg-cover bg-no-repeat rounded-lg flex justify-center items-center relative">
+                                <div class="bg-first-article-img size-full bg-cover bg-no-repeat rounded-lg absolute z-10 blur-[1px]"></div>
+                                <div class="bg-black/70 rounded-full py-3 px-4 flex justify-center items-center relative z-20">
+                                    <i class="fa fa-lock"></i>
+                                </div>
+                            </section>
+                            <p class="text-xs mt-2">فصل 1 قسمت 2</p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+       </section>
+       <section class="bg-zinc-900 text-white pb-5">
+            <section class="max-lg:px-2 lg:container">
+                <div class="md:flex md:items-center">
+                    <section class="md:order-2">
+                        <header class="py-4">
+                            <h3 class="text-xl">تماشای فیلیمو با همه دستگاه ها</h3>
+                            <h6 class="text-sm text-zinc-300 mt-3">
+                                می توانید فیلیمو را به صورت هم زمان روی 3 دستگاه مختلف مثل موبایل، تبلت، لپ تاپ، تلویزیون و ... تماشا کنید.
+                            </h6>
+                        </header>
+                        <section class="w-4/5 md:hidden">
+                            <img src="images/device2.png" alt="">
+                        </section>
+                        <section class="mt-3 space-y-6">
+                            <article class="flex space-x-3 space-x-reverse">
+                                <div>
+                                    <i class="fa fa-laptop text-3xl max-lg:text-2xl text-zinc-500" aria-hidden="true"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold mb-2">کامپیوتر و لپ تاپ</h5>
+                                    <h6 class="text-zinc-500 text-xs">windows PC - MacOS - Chorom OS </h6>
+                                </div>
+                            </article>
+                            <article class="flex space-x-3 space-x-reverse">
+                                <div>
+                                  <i class="fa fa-mobile-alt text-3xl max-lg:text-2xl text-zinc-500 ps-2"></i>  
+                                </div>
+                                <div>
+                                    <h5 class="font-bold mb-2">موبایل و تبلت</h5>
+                                    <h6 class="text-zinc-500 text-xs">windows PC - MacOS - Chorom OS </h6>
+                                </div>
+                            </article>
+                            <article class="flex space-x-3 space-x-reverse">
+                                <div>
+                                  <i class="fas fa-gamepad text-3xl max-lg:text-2xl text-zinc-500"></i>  
+                                </div>
+                                <div>
+                                    <h5 class="font-bold mb-2">کنسول های بازی (Browser)</h5>
+                                    <h6 class="text-zinc-500 text-xs">windows PC - MacOS - Chorom OS </h6>
+                                </div>
+                            </article>
+                        </section>
+                        <section class="my-8">
+                            <button class="filimo-btn">خرید اشتراک و تماشا</button>
+                        </section>
+                    </section>
+                    <section class="hidden md:inline-block md:order-1">
+                        <img src="images/device2.png" alt="">
+                    </section>
+                </div>
+            </section>
+       </section>
+       <section class="bg-zinc-900 text-white pb-5">
+            <section class="sm:container max-sm:px-2">
+                <section class="md:flex md:items-center">
+                    <section>
+                        <header>
+                            <h4 class="text-xl lg:text-2xl mb-4">چطور با تلویزیون، فیلیمو تماشا کنم؟</h4>
+                            <p class="text-sm md:max-lg:text-xs text-zinc-400">
+                                ما برای راحتی شما و تماشای فیلیمو روی تلویزیون&zwnj;های مختلف 6 روش را فراهم کردیم. هرکدام از این 6
+                                روش
+                                یک ویدیو آموزشی دارند که می&zwnj;توانید از لینک زیر، آن&zwnj;ها را تماشا کنید و روشی که با تلویزیون شما
+                                سازگار
+                                است را انتخاب کنید.
+                            </p>
+                        </header>
+                        <div>
+                            <img src="images/TVBG-yaghi.jpeg" alt="" class="md:hidden">
+                        </div>
+                        <div class="mt-5 space-y-5">
+                            <article class="flex space-x-3 space-x-reverse">
+                                <div>
+                                  <i class="fa fa-laptop text-3xl max-lg:text-xl text-zinc-500"></i>  
+                                </div>
+                                <div>
+                                    <h5 class="font-bold mb-2">تلویزیون</h5>
+                                    <h6 class="text-zinc-500 text-xs">
+                                        Amazon Fire TV - LG TVs - Chrome Cast - Apple TV - Android TV devices - Samsung
+                                    </h6>
+                                </div>
+                            </article>
+                            <article class="flex space-x-3 space-x-reverse">
+                                <div>
+                                  <i class="fa fa-mobile-alt text-3xl max-lg:text-xl text-zinc-500 ps-2"></i>  
+                                </div>
+                                <div>
+                                    <h5 class="font-bold mb-2">اندروید تی وی</h5>
+                                    <h6 class="text-zinc-500 text-xs">
+                                        Amazon Fire TV - LG TVs - Chrome Cast - Apple TV - Android TV devices - Samsung
+                                    </h6>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="mt-5 pb-4">
+                            <button class="bg-zinc-700 px-3 py-2 rounded-md text-sm w-full">ویدیوهای آموزشی تماشا با تلویزیون</button>
+                        </div>
+                    </section>
+                    <section class="hidden md:inline-block ps-8">
+                        <img src="images/TVBG-yaghi.jpeg" alt="" class="rounded">
+                    </section>
+                </section>
+            </section>
+       </section>
+       <section class="bg-zinc-900 text-white pb-5">
+            <section class="sm:container max-sm:px-2">
+                <header>
+                    <h4 class="text-xl mb-4">محتواهای رایگان</h4>
+                </header>
+                <section class="owl-carousel">
+                    <article>
+                        <div class="bg-first-article-img bg-no-repeat bg-cover h-96 w-72 min-[450px]:h-72 min-[450px]:w-52 lg:h-52 lg:w-36 relative rounded-md">
+                            <div class="overlay absolute inset-0 bg-zinc-700/40"></div>
+                            <div class="absolute top-1 start-3 flex space-x-1 space-x-reverse bg-green-950 text-filimo-green rounded-2xl py-1 px-2">
+                                <i class="fa fa-play text-xs"></i>
+                                <p class="text-xs">رایگان</p>
+                            </div>
+                        </div>
+                        <p class="text-xs mt-2">پایتخت</p>
+                    </article>
+                </section>
+            </section>
+       </section>
+       <section class="bg-gradient-to-bl from-[#031a24] from-5% to-zinc-900 to-30% text-white pb-5">
+            <section class="container md:flex md:flex-row-reverse md:items-center max-sm:px-2">
+                <header class="md:w-1/2 md:flex md:flex-col md:justify-center md:ps-10 md:pe-16">
+                    <h4 class="text-xl mb-4">دنیایی متنوع از فیلم و کارتون های کودکانه</h4>
+                    <p class="text-zinc-500 text-sm">
+                        ساخت فیلیمو کودک این امکان را می&zwnj;دهد که با انتخاب سن فرزندتان،
+                        یک فضای امن برای تماشای کودک بسازید؛
+                        یعنی محتوای مخصوص سن خودش را ببیند و به بقیه فیلم و سریال&zwnj;ها دسترسی نداشته&zwnj;باشد.
+                    </p>
+                    <div class="mt-3 space-x-1 space-x-reverse">
+                        <button class="bg-gray-200 text-black px-3 py-2 rounded-md text-sm">فیلیمو کودک بساز</button>
+                        <button class="bg-gray-200 text-black px-3 py-2 rounded-md text-sm">تماشای فیلیمو کودک</button>
+                    </div>
+                </header>
+                <section class="md:w-1/2 md:pt-20">
+                    <div class="flex justify-center items-center">
+                        <img src="images/bg-kids.png" alt="" class="w-5/6">
+                    </div>
+                </section>
+            </section>
+       </section>
+       <section class="bg-[#160303] text-white pb-5">
+            <section class="sm:container py-10">
+                <header class="flex flex-col items-center justify-center">
+                    <h4 class="text-2xl mb-4 font-bold">سینما آنلاین فیلیمو</h4>
+                    <ul class="space-y-4 text-sm flex flex-col items-center">
+                        <li class="flex space-x-2 space-x-reverse">
+                            <div class="bg-green-950 rounded-full px-1 py-1 flex justify-center items-center">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <p>فیلم های روز سینمای ایران</p>
+                        </li>
+                        <li class="flex space-x-2 space-x-reverse">
+                            <div class="bg-green-950 rounded-full px-1 py-1 flex justify-center items-center">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <p>8 ساعت زمان برای مشاهده فیلم در هر کجا</p>
+                        </li>
+                        <li class="flex space-x-2 space-x-reverse">
+                            <div class="bg-green-950 rounded-full px-1 py-1 flex justify-center items-center">
+                                <i class="fa fa-check"></i>
+                            </div>
+                            <p>خرید یک بلیط برای تماشا همراه با همه خانواده</p>
+                        </li>
+                    </ul>
+                </header>
+                <section class="mt-7 flex justify-center flex-wrap h-[350px] overflow-auto">
+                    <article class="w-full sm:w-5/6 lg:w-1/2 p-2">
+                        <div class="inner flex justify-between bg-slate-400/20 rounded-lg border">
+                            <section class="flex">
+                                <div>
+                                    <img src="images/1.jpg" alt="" class="rounded-md">
+                                </div>
+                                <div class="flex flex-col justify-around ms-4">
+                                    <div class="flex items-center justify-between">
+                                        <h5 class="font-bold max-xs:text-sm max-sm:text-md">روز ششم</h5>
+                                        <div class="bg-zinc-800/80 text-xs sm:hidden mt-2 me-1 text-center sm:me-5 rounded-lg px-1 py-1 flex items-center space-x-1 space-x-reverse">
+                                            <i class="fa fa-ticket"></i>
+                                            <p>اکران آنلاین</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-zinc-300 max-xs:text-xs max-sm:text-sm">کارگردان: حجت قاسم زاده اصل</p>
+                                    <div class="flex space-x-3 space-x-reverse">
+                                        <div class="bg-zinc-400/20 rounded-2xl w-14 px-1 text-center">جنایی</div>
+                                        <div class="bg-zinc-400/20 rounded-2xl w-14 px-1 text-center">رازآلود</div>
+                                    </div>
+                                    <div class="">
+                                        <button class="border rounded-xl px-2 py-1">خرید بلیت</button>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="bg-zinc-800/80 hidden sm:flex text-xs mt-2 me-1 text-center sm:me-5 rounded-lg px-1 py-1 items-center space-x-1 space-x-reverse">
+                                    <i class="fa fa-ticket"></i>
+                                    <p>اکران آنلاین</p>
+                                </div>
+                            </section>     
+                        </div>
+                    </article>
+                    <article class="w-full sm:w-5/6 lg:w-1/2 p-2">
+                        <div class="inner flex justify-between bg-slate-400/20 rounded-lg border">
+                            <section class="flex">
+                                <div>
+                                    <img src="images/1.jpg" alt="" class="rounded-md">
+                                </div>
+                                <div class="flex flex-col justify-around ms-4">
+                                    <div class="flex items-center justify-between">
+                                        <h5 class="font-bold max-xs:text-sm max-sm:text-md">روز ششم</h5>
+                                        <div class="bg-zinc-800/80 text-xs sm:hidden mt-2 me-1 text-center sm:me-5 rounded-lg px-1 py-1 flex items-center space-x-1 space-x-reverse">
+                                            <i class="fa fa-ticket"></i>
+                                            <p>اکران آنلاین</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-zinc-300 max-xs:text-xs max-sm:text-sm">کارگردان: حجت قاسم زاده اصل</p>
+                                    <div class="flex space-x-3 space-x-reverse">
+                                        <div class="bg-zinc-400/20 rounded-2xl w-14 px-1 text-center">جنایی</div>
+                                        <div class="bg-zinc-400/20 rounded-2xl w-14 px-1 text-center">رازآلود</div>
+                                    </div>
+                                    <div class="">
+                                        <button class="border rounded-xl px-2 py-1">خرید بلیت</button>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="bg-zinc-800/80 hidden sm:flex text-xs mt-2 me-1 text-center sm:me-5 rounded-lg px-1 py-1 items-center space-x-1 space-x-reverse">
+                                    <i class="fa fa-ticket"></i>
+                                    <p>اکران آنلاین</p>
+                                </div>
+                            </section>     
+                        </div>
+                    </article>
+                    <article class="w-full sm:w-5/6 lg:w-1/2 p-2">
+                        <div class="inner flex justify-between bg-slate-400/20 rounded-lg border">
+                            <section class="flex">
+                                <div>
+                                    <img src="images/1.jpg" alt="" class="rounded-md">
+                                </div>
+                                <div class="flex flex-col justify-around ms-4">
+                                    <div class="flex items-center justify-between">
+                                        <h5 class="font-bold max-xs:text-sm max-sm:text-md">روز ششم</h5>
+                                        <div class="bg-zinc-800/80 text-xs sm:hidden mt-2 me-1 text-center sm:me-5 rounded-lg px-1 py-1 flex items-center space-x-1 space-x-reverse">
+                                            <i class="fa fa-ticket"></i>
+                                            <p>اکران آنلاین</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-zinc-300 max-xs:text-xs max-sm:text-sm">کارگردان: حجت قاسم زاده اصل</p>
+                                    <div class="flex space-x-3 space-x-reverse">
+                                        <div class="bg-zinc-400/20 rounded-2xl w-14 px-1 text-center">جنایی</div>
+                                        <div class="bg-zinc-400/20 rounded-2xl w-14 px-1 text-center">رازآلود</div>
+                                    </div>
+                                    <div class="">
+                                        <button class="border rounded-xl px-2 py-1">خرید بلیت</button>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="bg-zinc-800/80 hidden sm:flex text-xs mt-2 me-1 text-center sm:me-5 rounded-lg px-1 py-1 items-center space-x-1 space-x-reverse">
+                                    <i class="fa fa-ticket"></i>
+                                    <p>اکران آنلاین</p>
+                                </div>
+                            </section>     
+                        </div>
+                    </article>
+                    <article class="w-full sm:w-5/6 lg:w-1/2 p-2">
+                        <div class="inner flex justify-between bg-slate-400/20 rounded-lg border">
+                            <section class="flex">
+                                <div>
+                                    <img src="images/1.jpg" alt="" class="rounded-md">
+                                </div>
+                                <div class="flex flex-col justify-around ms-4">
+                                    <div class="flex items-center justify-between">
+                                        <h5 class="font-bold max-xs:text-sm max-sm:text-md">روز ششم</h5>
+                                        <div class="bg-zinc-800/80 text-xs sm:hidden mt-2 me-1 text-center sm:me-5 rounded-lg px-1 py-1 flex items-center space-x-1 space-x-reverse">
+                                            <i class="fa fa-ticket"></i>
+                                            <p>اکران آنلاین</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-zinc-300 max-xs:text-xs max-sm:text-sm">کارگردان: حجت قاسم زاده اصل</p>
+                                    <div class="flex space-x-3 space-x-reverse">
+                                        <div class="bg-zinc-400/20 rounded-2xl w-14 px-1 text-center">جنایی</div>
+                                        <div class="bg-zinc-400/20 rounded-2xl w-14 px-1 text-center">رازآلود</div>
+                                    </div>
+                                    <div class="">
+                                        <button class="border rounded-xl px-2 py-1">خرید بلیت</button>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="bg-zinc-800/80 hidden sm:flex text-xs mt-2 me-1 text-center sm:me-5 rounded-lg px-1 py-1 items-center space-x-1 space-x-reverse">
+                                    <i class="fa fa-ticket"></i>
+                                    <p>اکران آنلاین</p>
+                                </div>
+                            </section>     
+                        </div>
+                    </article>
+                    <article class="w-full sm:w-5/6 lg:w-1/2 p-2">
+                        <div class="inner flex justify-between bg-slate-400/20 rounded-lg border">
+                            <section class="flex">
+                                <div>
+                                    <img src="images/1.jpg" alt="" class="rounded-md">
+                                </div>
+                                <div class="flex flex-col justify-around ms-4">
+                                    <div class="flex items-center justify-between">
+                                        <h5 class="font-bold max-xs:text-sm max-sm:text-md">روز ششم</h5>
+                                        <div class="bg-zinc-800/80 text-xs sm:hidden mt-2 me-1 text-center sm:me-5 rounded-lg px-1 py-1 flex items-center space-x-1 space-x-reverse">
+                                            <i class="fa fa-ticket"></i>
+                                            <p>اکران آنلاین</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-zinc-300 max-xs:text-xs max-sm:text-sm">کارگردان: حجت قاسم زاده اصل</p>
+                                    <div class="flex space-x-3 space-x-reverse">
+                                        <div class="bg-zinc-400/20 rounded-2xl w-14 px-1 text-center">جنایی</div>
+                                        <div class="bg-zinc-400/20 rounded-2xl w-14 px-1 text-center">رازآلود</div>
+                                    </div>
+                                    <div class="">
+                                        <button class="border rounded-xl px-2 py-1">خرید بلیت</button>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="bg-zinc-800/80 hidden sm:flex text-xs mt-2 me-1 text-center sm:me-5 rounded-lg px-1 py-1 items-center space-x-1 space-x-reverse">
+                                    <i class="fa fa-ticket"></i>
+                                    <p>اکران آنلاین</p>
+                                </div>
+                            </section>     
+                        </div>
+                    </article>
+                    <article class="w-full sm:w-5/6 lg:w-1/2 p-2">
+                        <div class="inner flex justify-between bg-slate-400/20 rounded-lg border">
+                            <section class="flex">
+                                <div>
+                                    <img src="images/1.jpg" alt="" class="rounded-md">
+                                </div>
+                                <div class="flex flex-col justify-around ms-4">
+                                    <div class="flex items-center justify-between">
+                                        <h5 class="font-bold max-xs:text-sm max-sm:text-md">روز ششم</h5>
+                                        <div class="bg-zinc-800/80 text-xs sm:hidden mt-2 me-1 text-center sm:me-5 rounded-lg px-1 py-1 flex items-center space-x-1 space-x-reverse">
+                                            <i class="fa fa-ticket"></i>
+                                            <p>اکران آنلاین</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-zinc-300 max-xs:text-xs max-sm:text-sm">کارگردان: حجت قاسم زاده اصل</p>
+                                    <div class="flex space-x-3 space-x-reverse">
+                                        <div class="bg-zinc-400/20 rounded-2xl w-14 px-1 text-center">جنایی</div>
+                                        <div class="bg-zinc-400/20 rounded-2xl w-14 px-1 text-center">رازآلود</div>
+                                    </div>
+                                    <div class="">
+                                        <button class="border rounded-xl px-2 py-1">خرید بلیت</button>
+                                    </div>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="bg-zinc-800/80 hidden sm:flex text-xs mt-2 me-1 text-center sm:me-5 rounded-lg px-1 py-1 items-center space-x-1 space-x-reverse">
+                                    <i class="fa fa-ticket"></i>
+                                    <p>اکران آنلاین</p>
+                                </div>
+                            </section>     
+                        </div>
+                    </article>
+                </section>
+            </section>
+        </section>
+        <section class="bg-zinc-900 text-white py-16 px-2">
+            <section class="sm:container">
+                <header class="flex justify-between">
+                    <h4 class="text-lg sm:text-xl mb-4">نظر کاربران بعد از تماشای فیلیمو</h4>
+                    <div class="icons flex space-x-1 space-x-reverse">
+                        <div class="bg-zinc-950/70 rounded-full flex justify-center items-center size-8">
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                        <div class="bg-zinc-950/70 rounded-full flex justify-center items-center size-8">
+                            <i class="fa fa-angle-left"></i>
+                        </div>
+                    </div>
+                </header>
+                <section class="owl-carousel">
+                    <article>
+                        <div class="bg-zinc-900/10 border border-zinc-800 p-4 h-36 w-56 relative rounded-md shadow-inner">
+                            <div class="flex justify-between">
+                               <div class="flex items-center space-x-1 space-x-reverse">
+                                    <div class="border border-slate-700 rounded-full p-1 flex justify-center items-center">
+                                        <i class="fa fa-user text-xs text-slate-700"></i>
+                                    </div>
+                                    <P class="text-sm text-slate-400">RAMTIN</P>
+                               </div>
+                                <div class="">
+                                    <i class="fas fa-quote-left text-slate-700 text-4xl"></i>
+                                </div>
+                            </div>
+                            <div class="overflow-y-auto h-14">
+                                <p class="text-[11px]">
+                                    عالیه خیلی فیلم و سریال های قشنگی داره
+                                    و با استفاده از طراحان گرافیک است، چاپگرها  
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </section>
+            </section>
+        </section>
+        <section class="bg-zinc-950 text-white py-10 px-2">
+            <section class="sm:container">
+                <header class="">
+                    <h4 class="text-xl mb-4 text-center">سئوالات متداول</h4>
+                    <p class="text-sm text-zinc-500 font-bold text-center">
+                        سئوال شایع دیگر کاربران شاید برای ما پیش آمده باشد
+                    </p>
+                </header>
+                <section class="py-6">
+                    <div id="accordionFlushExample" class="text-white space-y-2">
+                        <div
+                          class="rounded-lg border bg-zinc-900 border-zinc-800">
+                          <h2 class="mb-0" id="flush-headingOne">
+                            <button
+                              class="group relative flex w-full items-center border-b border-zinc-800 rounded-t-lg px-5 py-4 text-md text-white transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-twe-collapse-collapsed])]:shadow-white/10 [&:not([data-twe-collapse-collapsed])]:text-orange-600"
+                              type="button"
+                              data-twe-collapse-init
+                              data-twe-collapse-collapsed
+                              data-twe-target="#flush-collapseOne"
+                              aria-expanded="false"
+                              aria-controls="flush-One">
+                             آیا می توانم فیلم های موجود در فیلیمو را دانلود کنم؟
+                            </button>
+                          </h2>
+                          <div
+                            id="flush-collapseOne"
+                            class="!visible hidden border-0"
+                            data-twe-collapse-item
+                            aria-labelledby="flush-headingOne"
+                            data-twe-parent="#accordionFlushExample">
+                            <div class="px-5 py-4 text-sm">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط 
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                        class="rounded-lg border bg-zinc-900 border-zinc-800">
+                          <h2 class="mb-0" id="flush-headingTwo">
+                            <button
+                            class="group relative flex w-full items-center border-b border-zinc-800 rounded-t-lg px-5 py-4 text-md text-white transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-twe-collapse-collapsed])]:shadow-white/10 [&:not([data-twe-collapse-collapsed])]:text-orange-600"
+                              type="button"
+                              data-twe-collapse-init
+                              data-twe-collapse-collapsed
+                              data-twe-target="#flush-collapseTwo"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseTwo">
+                              آیا فیلیمو برای خارج از ایران در دسترس است؟
+                            </button>
+                          </h2>
+                          <div
+                            id="flush-collapseTwo"
+                            class="!visible hidden border-0"
+                            data-twe-collapse-item
+                            aria-labelledby="flush-headingTwo"
+                            data-twe-parent="#accordionFlushExample">
+                            <div class="px-5 py-4 text-sm">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط 
+                              </div>
+                          </div>
+                        </div>
+                        <div
+                        class="rounded-lg border bg-zinc-900 border-zinc-800">
+                          <h2 class="mb-0" id="flush-headingThree">
+                            <button
+                            class="group relative flex w-full items-center border-b border-zinc-800 rounded-t-lg px-5 py-4 text-md text-white transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-twe-collapse-collapsed])]:shadow-white/10 [&:not([data-twe-collapse-collapsed])]:text-orange-600"
+                              type="button"
+                              data-twe-collapse-init
+                              data-twe-collapse-collapsed
+                              data-twe-target="#flush-collapseThree"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseThree">
+                              آیا برای تماشای فیلم های اکران آنلاین، باید اشتراک بخرم؟
+                            </button>
+                          </h2>
+                          <div
+                            id="flush-collapseThree"
+                            class="!visible hidden"
+                            data-twe-collapse-item
+                            aria-labelledby="flush-headingThree"
+                            data-twe-parent="#accordionFlushExample">
+                            <div class="px-5 py-4 text-sm">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط 
+                              </div>
+                          </div>
+                        </div>
+                        <div
+                        class="rounded-lg border bg-zinc-900 border-zinc-800">
+                          <h2 class="mb-0" id="flush-headingFour">
+                            <button
+                            class="group relative flex w-full items-center border-b border-zinc-800 rounded-t-lg px-5 py-4 text-md text-white transition [overflow-anchor:none] hover:z-[2] focus:z-[3] focus:outline-none [&:not([data-twe-collapse-collapsed])]:shadow-white/10 [&:not([data-twe-collapse-collapsed])]:text-orange-600"
+                              type="button"
+                              data-twe-collapse-init
+                              data-twe-collapse-collapsed
+                              data-twe-target="#flush-collapseFour"
+                              aria-expanded="false"
+                              aria-controls="flush-collapseFour">
+                              آیا برای تماشای فیلم های اکران آنلاین، باید اشتراک بخرم؟
+                            </button>
+                          </h2>
+                          <div
+                            id="flush-collapseFour"
+                            class="!visible hidden"
+                            data-twe-collapse-item
+                            aria-labelledby="flush-headingFour"
+                            data-twe-parent="#accordionFlushExample">
+                            <div class="px-5 py-4 text-sm">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط 
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="py-12 relative bg-filimo-green after:absolute after:inset-0 after:bg-black/95 after:z-1">
+            <header class="flex justify-center relative z-10">
+                <img src="images/footer-logo.png" alt="">
+            </header>
+            <section class="relative mt-10 z-10 flex flex-col">
+                <ul class="flex justify-center flex-wrap text-white">
+                    <li class="flex justify-center max-lg:mb-10 w-full sm:w-1/2 lg:w-1/3 sm:px-2 items-center space-x-1 space-x-reverse">
+                        <div class="bg-green-950 rounded-full size-3">
+                        </div>
+                        <p class="text-sm">
+                            هزاران فیلم و سریال خارجی(دوبله و زیرنویس)
+                        </p>
+                    </li>
+                    <li class="flex justify-center max-lg:mb-10 w-full sm:w-1/2 lg:w-1/3 sm:px-2 items-center space-x-1 space-x-reverse">
+                        <div class="bg-green-950 rounded-full size-3">
+                        </div>
+                        <p class="text-sm">
+                            هزاران انیمیشن و کارتون برای کودکان
+                        </p>
+                    </li>
+                    <li class="flex justify-center w-full sm:w-1/2 lg:w-1/3 sm:px-2 items-center space-x-1 space-x-reverse">
+                        <div class="bg-green-950 rounded-full size-3">
+                        </div>
+                        <p class="text-sm">
+                           پشتیبانی 24 ساعته برای راهنمایی شما
+                        </p>
+                    </li>
+                </ul>
+                <section class="my-8 self-center">
+                    <button class="bg-filimo-green px-10 py-3 rounded-md text-sm text-white inline-block mx-auto">خرید اشتراک و تماشا</button>
+                </section>
+            </section>
+        </div>
+
+    </footer>
+
+    
+
+    <script src="all.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../node_modules/tw-elements/js/tw-elements.umd.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                rtl: true,
+                loop: true,
+                margin: 3,
+                responsive:{
+                    320:{
+                        items:1
+                    },
+                    460:{
+                        items:2,
+                    },
+                    768:{
+                        items:3
+                    },
+                    1024:{
+                        items:4
+                    },
+                    1280:{
+                        items:5
+                    }
+                }
+            });
+        });
+
+        // Initialization for ES Users
+        // import {
+        //     Collapse,
+        //     initTWE,
+        //     } from "tw-elements";
+
+        initTWE({ Collapse });
+    </script>
+</body>
+</html>
