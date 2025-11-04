@@ -1,0 +1,11 @@
+{
+  "scripts": {
+  "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.7"
+  },
+  "dependencies": {
+    "tw-elements": "^2.0.0"
+  }
+}
