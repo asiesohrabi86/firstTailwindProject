@@ -20,12 +20,8 @@ jobs:
           npm install
           npm run build
 
-      # این مرحله‌ی جدید را اضافه کنید
-      - name: Create .nojekyll file
-        run: touch .nojekyll
-
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: .
+          folder: dist  
