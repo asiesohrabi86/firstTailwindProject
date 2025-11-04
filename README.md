@@ -187,4 +187,4 @@ Credits
 - Vazir font: see src/fonts/vazir/README.md
 
 License
-Add a LICENSE file (e.g., MIT) or state your preferred license in the repo.
+Add a LICENSE file (e.g., MIT) or state  your preferred license in the repo. 
