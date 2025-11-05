@@ -10,9 +10,9 @@
 
 @font-face {
     font-family: "vazir";
-    src: url("fonts/vazir/Farsi-Digits/Vazir-Regular-FD.eot"),
-    url("fonts/vazir/Farsi-Digits/Vazir-Regular-FD.woff"),
-    url("fonts/vazir/Farsi-Digits/Vazir-Regular-FD.woff2");
+    src: url("../assets/fonts/vazir/Farsi-Digits/Vazir-Regular-FD.eot"),
+    url("../assets/fonts/vazir/Farsi-Digits/Vazir-Regular-FD.woff"),
+    url("../assets/fonts/vazir/Farsi-Digits/Vazir-Regular-FD.woff2");
 }
 
 body {
